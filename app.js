@@ -20,7 +20,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${userCity}&units=metri
     //---------------------------------ICON---------------------------------
     let icon = document.createElement("img");
     icon.classList.add("icon");
-    icon.src = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    icon.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     document.querySelector(".weather-head-right").appendChild(icon);
 
     //---------------------------------DESCRIPTION---------------------------------
